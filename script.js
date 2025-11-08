@@ -115,8 +115,10 @@ function clearWishlist(){
 
 // Event listeners
 document.getElementById('download-wishlist').addEventListener('click', downloadWishlistPDF);
+
+// Ajouter le bouton “Vider ma sélection” dans l’encart
 const clearBtn = document.createElement('button');
-clearBtn.textContent = '🗑 Vider la sélection';
+clearBtn.textContent = '🗑 Vider ma sélection';
 clearBtn.style.marginTop = '0.5rem';
 clearBtn.addEventListener('click', clearWishlist);
 document.getElementById('wishlist-container').appendChild(clearBtn);
