@@ -58,7 +58,7 @@ function createCard(call, source) {
   return card;
 }
 
-// Ajouter/retirer de la wishlist et mettre à jour le bouton + encart
+// Ajouter/retirer de la wishlist et mettre à jour bouton + encart
 function toggleWishlist(call, sourceName, button){
   const id = sourceName+'::'+call.title;
   const index = wishlist.findIndex(item=>item.id===id);
@@ -105,6 +105,20 @@ function downloadWishlistPDF(){
   doc.save('wishlist.pdf');
 }
 
+// Vider la wishlist
+function clearWishlist(){
+  wishlist = [];
+  localStorage.removeItem('wishlist');
+  renderWishlist();
+  document.querySelectorAll('.wishlist-btn').forEach(btn => btn.textContent = '⭐ Ajouter');
+}
+
+// Event listeners
 document.getElementById('download-wishlist').addEventListener('click', downloadWishlistPDF);
+const clearBtn = document.createElement('button');
+clearBtn.textContent = '🗑 Vider la sélection';
+clearBtn.style.marginTop = '0.5rem';
+clearBtn.addEventListener('click', clearWishlist);
+document.getElementById('wishlist-container').appendChild(clearBtn);
 
 loadData();
