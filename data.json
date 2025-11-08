@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "name": "Incubateur InnovAction",
+      "desc": "Programme pour startups innovantes",
+      "tags": ["startup","innovation","tech"],
+      "calls": [
+        {
+          "title": "Concours Pitch 2025",
+          "deadline": "2025-12-01",
+          "url": "https://innovaction.fr/pitch2025",
+          "tags": ["concours","pitch"],
+          "note": "Présentez votre projet et gagnez un accompagnement personnalisé."
+        },
+        {
+          "title": "Bourse Innovation Sociale",
+          "deadline": "2025-11-15",
+          "url": "https://innovaction.fr/bourse2025",
+          "tags": ["social","bourse"],
+          "note": "Aide financière pour les projets à impact social."
+        }
+      ]
+    },
+    {
+      "name": "Fondation Tech & Futur",
+      "desc": "Appels à projets technologiques",
+      "tags": ["tech","recherche","futur"],
+      "calls": [
+        {
+          "title": "Subvention IA et santé",
+          "deadline": "2025-11-30",
+          "url": "https://techfutur.org/ia-sante",
+          "tags": ["IA","santé","subvention"],
+          "note": "Financement pour projets mêlant IA et santé."
+        },
+        {
+          "title": "Hackathon Energie Verte",
+          "deadline": "2025-12-10",
+          "url": "https://techfutur.org/hack-energie",
+          "tags": ["hackathon","energie","verte"],
+          "note": "Participez à un hackathon pour solutions énergies renouvelables."
+        }
+      ]
+    }
+  ]
+}
